@@ -18,7 +18,7 @@
 ## Sistem gereksinimleri:
 * Sadece node (Bazuka)  çalıştırmak için minimum 2CPU 2GB RAM 20GB SSD yeterli
 * Zoro için ekran kartı (GPU) ve minimum 32GB RAM gerekiyor
-* Uzi-Miner için minimum 2GB RAM'e daha ihtiyacınız olacak CPU içinse herhangi bir sınırlama yok. işlemci gücünüz ne kadar yüksekse blok bulma ihtimali  ve dolayısı ödül miktarı da o oranda yüksek olacaktır.
+* Uzi-Miner için minimum 4GB RAM'e daha ihtiyacınız olacak CPU içinse herhangi bir sınırlama yok. işlemci gücünüz ne kadar yüksekse blok bulma ihtimali  ve dolayısı ödül miktarı da o oranda yüksek olacaktır.
 
 ## Eğer daha önceki testnete katıldıysanız (Groth-Testnet) aynı cüzdanın mnemoniclerini kullanın
 ## Bu testnette cüzdan işlemleri için daha çok Zieshanın yeni geliştirdiği web wallet olan [ZeeJS Wallet](http://ziesha.network/zeejs/) kullanacağız.
@@ -104,6 +104,11 @@ systemctl enable bazuka
 ```
 systemctl start bazuka
 ```
+## Nodu yeniden başlatmak için
+```
+systemctl restart bazuka
+```
+
 ## Loglara bakmak için
 ```
 journalctl -u bazuka -fo cat
